@@ -5,7 +5,7 @@ public:
         int l = 0, r = height.size()-1;
         int maxArea = 0;
 
-        while(l < r){
+        while(l <= r){
             
             int h = min(height[l],height[r]);
             int w = r-l;
@@ -19,7 +19,7 @@ public:
             else{
                 r--;
             }
-            
+
         }
         return maxArea;
     }
